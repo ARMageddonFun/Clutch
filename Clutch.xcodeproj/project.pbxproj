@@ -35,7 +35,7 @@
 		266FD19E1E1D7CD300935807 /* ClutchPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F341D81C7212F3006E7700 /* ClutchPrint.m */; };
 		266FD1A01E1D7CFF00935807 /* libncurses.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 266FD19F1E1D7CFF00935807 /* libncurses.tbd */; };
 		266FD1A11E1D7D1500935807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EA6261A89258000844540 /* Foundation.framework */; };
-		266FD1A21E1D7D2200935807 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EA63D1A89260A00844540 /* MobileCoreServices.framework */; };
+		266FD1A21E1D7D2200935807 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EA63D1A89260A00844540 /* CoreServices.framework */; };
 		26AA1FE62070DC7900D29EB5 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 26FB0326201BFDC10046D1CA /* ioapi.c */; };
 		26AA1FE72070DC7900D29EB5 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 26FB0328201BFDC10046D1CA /* unzip.c */; };
 		26AA1FE82070DC7900D29EB5 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 26FB032A201BFDC10046D1CA /* zip.c */; };
@@ -93,7 +93,7 @@
 		324EA6321A89258000844540 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; };
 		324EA6341A89258000844540 /* Clutch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "Clutch-Prefix.pch"; sourceTree = "<group>"; };
 		324EA63A1A8925DB00844540 /* KJApplicationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJApplicationManager.h; sourceTree = "<group>"; };
-		324EA63D1A89260A00844540 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		324EA63D1A89260A00844540 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		324EA6401A8926DC00844540 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
 		324EA6411A8926DC00844540 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Application.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		324EA6431A89270D00844540 /* Clutch.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Clutch.entitlements; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 			files = (
 				26AB70871E1DC6DB00BDAE34 /* libMiniZip.a in Frameworks */,
 				26AB705A1E1D81D400BDAE34 /* libz.tbd in Frameworks */,
-				266FD1A21E1D7D2200935807 /* MobileCoreServices.framework in Frameworks */,
+				266FD1A21E1D7D2200935807 /* CoreServices.framework in Frameworks */,
 				266FD1A11E1D7D1500935807 /* Foundation.framework in Frameworks */,
 				266FD1A01E1D7CFF00935807 /* libncurses.tbd in Frameworks */,
 			);
@@ -222,7 +222,7 @@
 			children = (
 				26AB70591E1D81D400BDAE34 /* libz.tbd */,
 				266FD19F1E1D7CFF00935807 /* libncurses.tbd */,
-				324EA63D1A89260A00844540 /* MobileCoreServices.framework */,
+				324EA63D1A89260A00844540 /* CoreServices.framework */,
 				324EA6261A89258000844540 /* Foundation.framework */,
 				328CCB4B1ACFFBD500B21225 /* UIKit.framework */,
 			);
@@ -628,7 +628,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -652,7 +652,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -734,7 +734,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-Wno-variadic-macros";
 				SDKROOT = iphoneos;
@@ -810,7 +810,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-Wno-variadic-macros";
 				SDKROOT = iphoneos;
